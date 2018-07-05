@@ -1,0 +1,32 @@
+{
+  "title": "Change left_shift key",
+  "rules": [
+    {
+      "description": "Change left_shift to escape on single press",
+      "manipulators": [
+		{
+		  "type": "basic",
+		  "from": {
+			"key_code": "left_shift",
+ 			"modifiers": {
+			  "optional": [
+                "any"
+              ]
+        	}
+		  },
+		  "to": [
+			{
+              "key_code": "left_shift",
+              "lazy": true
+            }
+		  ],
+		  "to_if_alone": [
+	        {
+              "key_code": "escape"
+	        }
+		  ]
+		}
+	  ]
+	}
+  ]
+}
