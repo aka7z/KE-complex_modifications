@@ -1,32 +1,38 @@
 {
-  "title": "Change left_shift key",
-  "rules": [
-    {
-      "description": "Change left_shift to escape on single press",
-      "manipulators": [
+	"title": "Change shift keys",
+	"rules": [
 		{
-		  "type": "basic",
-		  "from": {
-			"key_code": "left_shift",
- 			"modifiers": {
-			  "optional": [
-                "any"
-              ]
-        	}
-		  },
-		  "to": [
-			{
-              "key_code": "left_shift",
-              "lazy": true
-            }
-		  ],
-		  "to_if_alone": [
-	        {
-              "key_code": "escape"
-	        }
-		  ]
+			"description": "Change left_shift to escape on single press",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "left_shift",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_shift",
+							"lazy": true
+						}
+					],
+					"to_if_alone": [
+						{
+							"key_code": "escape"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Change right_shift to enter on single press",
+			"manipulators": [
+				//書き方が全く分かりません＿ﾉ乙(､ﾝ､)＿
+			]
 		}
-	  ]
-	}
-  ]
+	]
 }
